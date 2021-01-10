@@ -6,7 +6,7 @@
   <link href="https://xdk-nj.github.io/atom.xml" rel="self"/>
   
   <link href="https://xdk-nj.github.io/"/>
-  <updated>2021-01-10T10:49:47.951Z</updated>
+  <updated>2021-01-10T10:49:45.515Z</updated>
   <id>https://xdk-nj.github.io/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Travis Hexo 持续集成</title>
-    <link href="https://xdk-nj.github.io/2021/01/10/Travis-Hexo-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
-    <id>https://xdk-nj.github.io/2021/01/10/Travis-Hexo-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</id>
-    <published>2021-01-10T07:41:22.000Z</published>
-    <updated>2021-01-10T10:49:47.951Z</updated>
-    
-    <content type="html"><![CDATA[<p>#Travis Hexo 持续集成</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;#Travis Hexo 持续集成&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="持续集成" scheme="https://xdk-nj.github.io/categories/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
-    
-    
-    <category term="持续集成" scheme="https://xdk-nj.github.io/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
-    
-  </entry>
   
   <entry>
     <title>前端基础</title>
