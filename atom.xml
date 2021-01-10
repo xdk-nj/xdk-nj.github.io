@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>打醒月亮</title>
+  
+  
+  <link href="https://xdk-nj.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://xdk-nj.github.io/"/>
+  <updated>2021-01-10T10:49:47.951Z</updated>
+  <id>https://xdk-nj.github.io/</id>
+  
+  <author>
+    <name>xudukang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Travis Hexo 持续集成</title>
+    <link href="https://xdk-nj.github.io/2021/01/10/Travis-Hexo-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+    <id>https://xdk-nj.github.io/2021/01/10/Travis-Hexo-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</id>
+    <published>2021-01-10T07:41:22.000Z</published>
+    <updated>2021-01-10T10:49:47.951Z</updated>
+    
+    <content type="html"><![CDATA[<p>#Travis Hexo 持续集成</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#Travis Hexo 持续集成&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="持续集成" scheme="https://xdk-nj.github.io/categories/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+    
+    
+    <category term="持续集成" scheme="https://xdk-nj.github.io/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端基础</title>
+    <link href="https://xdk-nj.github.io/2021/01/10/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    <id>https://xdk-nj.github.io/2021/01/10/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/</id>
+    <published>2021-01-10T05:53:55.000Z</published>
+    <updated>2021-01-10T10:49:45.515Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前端基础"><a href="#前端基础" class="headerlink" title="前端基础"></a>前端基础</h1><p><a href="https://www.w3school.com.cn/h.asp">HTML参考文档</a></p><p><a href="https://www.w3school.com.cn/h.asp">CSS参考文档</a></p><p><a href="https://www.w3school.com.cn/js/index.asp">JavaScript参考文档</a></p><p><a href="https://jquery.cuishifeng.cn/index.html">jQuery参考文档</a></p><p><strong>CSS选择器</strong></p><ul><li><p>标签选择器</p></li><li><p>id选择器</p></li><li><p>类选择器</p></li><li><p>后代选择器</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.d</span> <span class="selector-tag">p</span> &#123;&#125; &lt;!<span class="selector-tag">--</span> <span class="selector-tag">class</span> 为 <span class="selector-tag">d</span>，后代为 <span class="selector-tag">p</span> 标签 <span class="selector-tag">--</span>&gt;</span><br></pre></td></tr></table></figure></li><li><p>交集选择器</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-class">.p2</span> &#123;&#125; &lt;!<span class="selector-tag">--</span> 中间没有空格(<span class="selector-tag">p</span><span class="selector-class">.p2</span> 又叫 <span class="selector-tag">p</span> 标签 又叫<span class="selector-tag">p2</span>) <span class="selector-tag">--</span>&gt;</span><br></pre></td></tr></table></figure></li><li><p>并集选择器</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.d4</span> <span class="selector-tag">h1</span>,<span class="selector-tag">li</span> &#123;&#125; &lt;!<span class="selector-tag">--</span> 中间用逗号隔开 <span class="selector-tag">--</span>&gt;</span><br></pre></td></tr></table></figure></li><li><p>通配符  (*)</p></li></ul><p><strong>盒模型</strong></p><p>基本属性</p><ul><li>width：指的是内容区域的宽度</li><li>height：值得是内容区域的高度</li><li>padding：内边距</li><li>border：边框</li><li>margin：外边距</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前端基础&quot;&gt;&lt;a href=&quot;#前端基础&quot; class=&quot;headerlink&quot; title=&quot;前端基础&quot;&gt;&lt;/a&gt;前端基础&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.w3school.com.cn/h.asp&quot;&gt;HTML参考文档&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="前端基础" scheme="https://xdk-nj.github.io/categories/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="前端基础" scheme="https://xdk-nj.github.io/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo搭建博客</title>
+    <link href="https://xdk-nj.github.io/2021/01/10/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://xdk-nj.github.io/2021/01/10/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2021-01-10T01:16:04.000Z</published>
+    <updated>2021-01-10T01:27:34.984Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo搭建博客"><a href="#Hexo搭建博客" class="headerlink" title="Hexo搭建博客"></a>Hexo搭建博客</h1><ol><li>Hexo 的安装参考 <a href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a></li><li>安装 Next 主题，参考<a href="http://theme-next.iissnan.com/getting-started.html">Next主题官方文档</a></li></ol><p>基本命令：</p><ul><li>新建一篇博客</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &lt;title&gt;</span><br></pre></td></tr></table></figure><ul><li>生成</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure><ul><li>清除</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure><ul><li>部署</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure><ul><li>本地启动</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s -p &lt;port&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Hexo搭建博客&quot;&gt;&lt;a href=&quot;#Hexo搭建博客&quot; class=&quot;headerlink&quot; title=&quot;Hexo搭建博客&quot;&gt;&lt;/a&gt;Hexo搭建博客&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;Hexo 的安装参考 &lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot;&gt;Hexo官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;安装 Next 主题，参考&lt;a href=&quot;http://theme-next.iissnan.com/getting-started.html&quot;&gt;Next主题官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://xdk-nj.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://xdk-nj.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
