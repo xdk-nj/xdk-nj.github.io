@@ -3,9 +3,8 @@
   <entry>
     <title>ES6快速入门</title>
     <url>/2021/01/10/ES6%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[<h1 id="ES6快速入门"><a href="#ES6快速入门" class="headerlink" title="ES6快速入门"></a>ES6快速入门</h1><p>具体使用参考<a href="https://es6.ruanyifeng.com/#docs/let">ES6参考文档</a></p>
-<h2 id="1-let-和-const"><a href="#1-let-和-const" class="headerlink" title="1. let 和 const"></a>1. let 和 const</h2><p>###let 命令</p>
-<p><strong>基本用法</strong></p>
+    <content><![CDATA[<h1 id="ES6快速入门"><a href="#ES6快速入门" class="headerlink" title="ES6快速入门"></a>ES6快速入门</h1><p>具体使用参考  <a href="https://es6.ruanyifeng.com/#docs/let">ES6参考文档</a></p>
+<h2 id="1-let-和-const"><a href="#1-let-和-const" class="headerlink" title="1. let 和 const"></a>1. let 和 const</h2><h3 id="let-命令"><a href="#let-命令" class="headerlink" title="let 命令"></a>let 命令</h3><p><strong>基本用法</strong></p>
 <p>ES6 新增了  <code>let </code>  命令，用来声明变量。它的用法类似于  <code>var</code>，但是所声明的变量，只在  <code>let</code>  命令所在的代码块内有效。</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">10</span>;</span><br><span class="line">  <span class="keyword">var</span> b = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line">a <span class="comment">// ReferenceError: a is not defined.</span></span><br><span class="line">b <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
 <p><strong>不存在变量提升</strong></p>
@@ -19,8 +18,7 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 报错</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">10</span>;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-<p>###块级作用域</p>
-<p>const 和 let 二者都是块级作用域。 {} 内的代码块即为 let  和  const 的作用域。</p>
+<h3 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h3><p>const 和 let 二者都是块级作用域。 {} 内的代码块即为 let  和  const 的作用域。</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a=[];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)&#123;  <span class="comment">// 变量i只用来控制循环，但是循环结束后，它并没有消失，泄露成了全局变量。</span></span><br><span class="line">   a[i]=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">   	  <span class="built_in">console</span>.log(i);</span><br><span class="line">   &#125;;</span><br><span class="line">&#125;</span><br><span class="line">a[<span class="number">6</span>](); <span class="comment">// 10 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a=[];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)&#123; <span class="comment">// i 不会泄露</span></span><br><span class="line">   a[i]=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">   	  <span class="built_in">console</span>.log(i);</span><br><span class="line">   &#125;;</span><br><span class="line">&#125;</span><br><span class="line">a[<span class="number">6</span>](); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
 
 
@@ -31,10 +29,9 @@
 <h2 id="2-解构赋值"><a href="#2-解构赋值" class="headerlink" title="2. 解构赋值"></a>2. 解构赋值</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 对象</span></span><br><span class="line"><span class="keyword">const</span> people = &#123;</span><br><span class="line">    name: <span class="string">&#x27;java&#x27;</span>,</span><br><span class="line">    age: <span class="number">20</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> &#123; name, age &#125; = people</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;name&#125;</span> --- <span class="subst">$&#123;age&#125;</span>`</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 数组</span></span><br><span class="line"><span class="keyword">const</span> color = [<span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>]</span><br><span class="line"><span class="keyword">const</span> [first, second] = color</span><br><span class="line"><span class="built_in">console</span>.log(first) <span class="comment">// red</span></span><br><span class="line"><span class="built_in">console</span>.log(second) <span class="comment">// blue</span></span><br></pre></td></tr></table></figure>
 
 
-<p>##3. 字符串的扩展</p>
-<p><strong>字符串格式化</strong></p>
+<h2 id="3-字符串的扩展"><a href="#3-字符串的扩展" class="headerlink" title="3. 字符串的扩展"></a>3. 字符串的扩展</h2><p><strong>字符串格式化</strong></p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> e6 = <span class="string">&#x27;java&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">`hello <span class="subst">$&#123;e6&#125;</span>`</span>)</span><br></pre></td></tr></table></figure>
-<p>**多行字符串拼接 **</p>
+<p><strong>多行字符串拼接</strong></p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> template = <span class="string">`&lt;div&gt;</span></span><br><span class="line"><span class="string">        &lt;span&gt;hello world&lt;/span&gt;</span></span><br><span class="line"><span class="string">    &lt;/div&gt;`</span></span><br></pre></td></tr></table></figure>
 <p><a href="https://es6.ruanyifeng.com/#docs/string-methods">字符串新增方法</a></p>
 <h2 id="4-函数"><a href="#4-函数" class="headerlink" title="4. 函数"></a>4. 函数</h2><p><strong>ES6为参数提供了默认值。</strong></p>
@@ -59,8 +56,7 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> p = &#123;</span><br><span class="line">    name: <span class="string">&#x27;java&#x27;</span>,</span><br><span class="line">    getName () &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">this</span>.name)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> obj = <span class="built_in">Object</span>.assign(&#123;&#125;, p)</span><br><span class="line"><span class="built_in">console</span>.log(obj);</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="6-模块化"><a href="#6-模块化" class="headerlink" title="6. 模块化"></a>6. 模块化</h2><p>###CommonJs require的使用</p>
-<ul>
+<h2 id="6-模块化"><a href="#6-模块化" class="headerlink" title="6. 模块化"></a>6. 模块化</h2><h3 id="CommonJs-require的使用"><a href="#CommonJs-require的使用" class="headerlink" title="CommonJs require的使用"></a>CommonJs require的使用</h3><ul>
 <li>a.js </li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;hello module a&quot;</span>)</span><br><span class="line"><span class="built_in">exports</span>.x = <span class="number">1</span>  <span class="comment">// 向外部暴露变量和方法</span></span><br></pre></td></tr></table></figure>
@@ -69,8 +65,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> A = <span class="built_in">require</span>(<span class="string">&quot;./a.js&quot;</span>); <span class="comment">// 引入模块a</span></span><br><span class="line"><span class="built_in">console</span>.log(A.x)</span><br></pre></td></tr></table></figure>
 <p>node 中的全局变量为 global，全局中创建的变量作为 global 的属性保存，全局中创建的方法作为 global 的方法保存。</p>
-<h3 id="ES6模块化-import-和-export"><a href="#ES6模块化-import-和-export" class="headerlink" title="ES6模块化 import 和 export"></a>ES6模块化 import 和 export</h3><p>####ES6模块化的基本使用</p>
-<ul>
+<h3 id="ES6模块化-import-和-export"><a href="#ES6模块化-import-和-export" class="headerlink" title="ES6模块化 import 和 export"></a>ES6模块化 import 和 export</h3><h4 id="ES6模块化的基本使用"><a href="#ES6模块化的基本使用" class="headerlink" title="ES6模块化的基本使用"></a>ES6模块化的基本使用</h4><ul>
 <li>a.js</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 分别暴露</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> name = <span class="string">&quot;java&quot;</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;hello &quot;</span> + name)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -78,8 +73,7 @@
 <li>b.js</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 通用的引入方式</span></span><br><span class="line"><span class="keyword">import</span> * as A from <span class="string">&#x27;./a.js&#x27;</span></span><br><span class="line">A.hello()</span><br></pre></td></tr></table></figure>
-<p>####ES6 的几种暴露方式</p>
-<ul>
+<h4 id="ES6-的几种暴露方式"><a href="#ES6-的几种暴露方式" class="headerlink" title="ES6 的几种暴露方式"></a>ES6 的几种暴露方式</h4><ul>
 <li> 统一暴露</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">&quot;java&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;hello &quot;</span> + name)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> &#123;name, hello&#125;  </span><br></pre></td></tr></table></figure>
@@ -87,8 +81,7 @@
 <li>默认暴露</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    name : <span class="string">&quot;java&quot;</span>,</span><br><span class="line">    hello: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&quot;hello es6&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 这种引入方式在调用是要加 default，例如 A.default.hello()</span></span><br><span class="line"><span class="comment">// 一个文件里，有且只能有一个export default</span></span><br></pre></td></tr></table></figure>
-<p>####ES6 的几种引入方式</p>
-<ul>
+<h4 id="ES6-的几种引入方式"><a href="#ES6-的几种引入方式" class="headerlink" title="ES6 的几种引入方式"></a>ES6 的几种引入方式</h4><ul>
 <li>解构赋值形式1</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// a.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">let</span> name = <span class="string">&quot;java&quot;</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;hello &quot;</span> + name)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// b.js</span></span><br><span class="line"><span class="keyword">import</span> &#123;name, hello&#125; <span class="keyword">from</span> <span class="string">&#x27;./a.js&#x27;</span></span><br><span class="line"><span class="built_in">console</span>.log(name)</span><br></pre></td></tr></table></figure>
@@ -105,6 +98,41 @@
       </categories>
       <tags>
         <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo搭建博客</title>
+    <url>/2021/01/10/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="Hexo搭建博客"><a href="#Hexo搭建博客" class="headerlink" title="Hexo搭建博客"></a>Hexo搭建博客</h1><ol>
+<li>Hexo 的安装参考 <a href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a></li>
+<li>安装 Next 主题，参考<a href="http://theme-next.iissnan.com/getting-started.html">Next主题官方文档</a></li>
+</ol>
+<p>基本命令：</p>
+<ul>
+<li>新建一篇博客</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new post &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>清除</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<ul>
+<li>部署</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<ul>
+<li>本地启动</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s -p &lt;port&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -146,41 +174,6 @@
       </categories>
       <tags>
         <tag>前端基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo搭建博客</title>
-    <url>/2021/01/10/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="Hexo搭建博客"><a href="#Hexo搭建博客" class="headerlink" title="Hexo搭建博客"></a>Hexo搭建博客</h1><ol>
-<li>Hexo 的安装参考 <a href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a></li>
-<li>安装 Next 主题，参考<a href="http://theme-next.iissnan.com/getting-started.html">Next主题官方文档</a></li>
-</ol>
-<p>基本命令：</p>
-<ul>
-<li>新建一篇博客</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new post &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>生成</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<ul>
-<li>清除</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<ul>
-<li>部署</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<ul>
-<li>本地启动</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s -p &lt;port&gt;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
