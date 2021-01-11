@@ -136,26 +136,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue - Vue 实例</title>
-    <url>/2021/01/11/Vue%20-%20Vue%20%E5%AE%9E%E4%BE%8B/</url>
-    <content><![CDATA[<h1 id="Vue-Vue-实例"><a href="#Vue-Vue-实例" class="headerlink" title="Vue - Vue 实例"></a>Vue - Vue 实例</h1><p>Vue参考文档：<a href="https://cn.vuejs.org/v2/guide/">Vue参考文档</a></p>
-<h2 id="Vue实例"><a href="#Vue实例" class="headerlink" title="Vue实例"></a><a href="https://cn.vuejs.org/v2/guide/instance.html">Vue实例</a></h2><h3 id="创建一个-Vue-实例"><a href="#创建一个-Vue-实例" class="headerlink" title="创建一个 Vue 实例"></a>创建一个 Vue 实例</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="comment">// 选项</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p><strong>选项对象</strong>可以在 <a href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE">API 文档</a>中浏览完整的选项列表。</p>
-<h3 id="数据与方法"><a href="#数据与方法" class="headerlink" title="数据与方法"></a>数据与方法</h3><p>当一个 Vue 实例被创建时，它将 <code>data</code> 对象中的所有的 property 加入到 Vue 的<strong>响应式系统</strong>中。当这些 property 的值发生改变时，视图将会产生“响应”，即匹配更新为新的值。</p>
-<h3 id="实例生命周期钩子"><a href="#实例生命周期钩子" class="headerlink" title="实例生命周期钩子"></a>实例生命周期钩子</h3><p>在实例生命周期的不同阶段被调用，如 <a href="https://cn.vuejs.org/v2/api/#created"><code>created</code></a> 、 <a href="https://cn.vuejs.org/v2/api/#mounted"><code>mounted</code></a>、<a href="https://cn.vuejs.org/v2/api/#updated"><code>updated</code></a> 和 <a href="https://cn.vuejs.org/v2/api/#destroyed"><code>destroyed</code></a>。生命周期钩子的 <code>this</code> 上下文指向调用它的 Vue 实例。</p>
-<blockquote>
-<p>不要在选项 property 或回调上使用箭头函数，比如 <code>created: () =&gt; console.log(this.a)</code> 或 <code>vm.$watch(&#39;a&#39;, newValue =&gt; this.myMethod())</code>。因为箭头函数并没有 <code>this</code>，<code>this</code> 会作为变量一直向上级词法作用域查找，直至找到为止，经常导致错误。</p>
-</blockquote>
-<h3 id="生命周期图示"><a href="#生命周期图示" class="headerlink" title="生命周期图示"></a>生命周期图示</h3><p><img src="https://cn.vuejs.org/images/lifecycle.png" alt="生命周期"></p>
-]]></content>
-      <categories>
-        <category>Vue</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue - Class 与 Style 绑定</title>
     <url>/2021/01/11/Vue%20-%20Class%20%E4%B8%8E%20Style%20%E7%BB%91%E5%AE%9A/</url>
     <content><![CDATA[<h1 id="Vue-Class-与-Style-绑定"><a href="#Vue-Class-与-Style-绑定" class="headerlink" title="Vue - Class 与 Style 绑定"></a>Vue - Class 与 Style 绑定</h1><h2 id="Class-与-Style-绑定"><a href="#Class-与-Style-绑定" class="headerlink" title="Class 与 Style 绑定"></a><a href="https://cn.vuejs.org/v2/guide/class-and-style.html">Class 与 Style 绑定</a></h2><h3 id="绑定-HTML-Class"><a href="#绑定-HTML-Class" class="headerlink" title="绑定 HTML Class"></a>绑定 HTML Class</h3><h4 id="对象语法"><a href="#对象语法" class="headerlink" title="对象语法"></a>对象语法</h4><p>我们可以传给 <code>v-bind:class</code> 一个对象，以动态地切换 class：</p>
@@ -195,6 +175,62 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;div v-bind:style=<span class="string">&quot;styleObject&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">data: &#123;</span><br><span class="line">  styleObject: &#123;</span><br><span class="line">    color: <span class="string">&#x27;red&#x27;</span>,</span><br><span class="line">    fontSize: <span class="string">&#x27;13px&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="数组语法-1"><a href="#数组语法-1" class="headerlink" title="数组语法"></a>数组语法</h4><p><code>v-bind:style</code> 的数组语法可以将多个<strong>样式对象</strong>应用到同一个元素上：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">&quot;[baseStyles, overridingStyles]&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue - 条件渲染</title>
+    <url>/2021/01/11/Vue%20-%20%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/</url>
+    <content><![CDATA[<h1 id="Vue-条件渲染"><a href="#Vue-条件渲染" class="headerlink" title="Vue - 条件渲染"></a>Vue - 条件渲染</h1><h2 id="条件渲染"><a href="#条件渲染" class="headerlink" title="条件渲染"></a><a href="https://cn.vuejs.org/v2/guide/conditional.html">条件渲染</a></h2><h3 id="v-if"><a href="#v-if" class="headerlink" title="v-if"></a>v-if</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-if</span>=<span class="string">&quot;awesome&quot;</span>&gt;</span>Vue is awesome!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h1 v-if&#x3D;&quot;awesome&quot;&gt;Vue is awesome!&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;h1 v-else&gt;Oh no 😢&lt;&#x2F;h1&gt;</span><br></pre></td></tr></table></figure>
+<p>因为 <code>v-if</code> 是一个指令，所以必须将它添加到一个元素上。如果想切换多个元素，可以把一个 <code>&lt;template&gt;</code> 元素当做不可见的包裹元素，并在上面使用 <code>v-if</code>。最终的渲染结果将不包含 <code>&lt;template&gt;</code> 元素。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-if</span>=<span class="string">&quot;ok&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="v-else"><a href="#v-else" class="headerlink" title="v-else"></a>v-else</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">&quot;Math.random() &gt; 0.5&quot;</span>&gt;</span></span><br><span class="line">  Now you see me</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else</span>&gt;</span></span><br><span class="line">  Now you don&#x27;t</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>v-else</code> 元素必须紧跟在带 <code>v-if</code> 或者 <code>v-else-if</code> 的元素的后面，否则它将不会被识别。</p>
+<h3 id="v-else-if"><a href="#v-else-if" class="headerlink" title="v-else-if"></a>v-else-if</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">&quot;type === &#x27;A&#x27;&quot;</span>&gt;</span> A <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else-if</span>=<span class="string">&quot;type === &#x27;B&#x27;&quot;</span>&gt;</span> B <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else-if</span>=<span class="string">&quot;type === &#x27;C&#x27;&quot;</span>&gt;</span> C <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else</span>&gt;</span> Not A/B/C <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="用-key-管理可复用的元素"><a href="#用-key-管理可复用的元素" class="headerlink" title="用 key 管理可复用的元素"></a>用 <code>key</code> 管理可复用的元素</h3><p>Vue 会尽可能高效地渲染元素，通常会复用已有元素而不是从头开始渲染。这么做除了使 Vue 变得非常快之外，还有其它一些好处。例如，如果你允许用户在不同的登录方式之间切换：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-if</span>=<span class="string">&quot;loginType === &#x27;username&#x27;&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span>Username<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">placeholder</span>=<span class="string">&quot;Enter your username&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-else</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span>Email<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">placeholder</span>=<span class="string">&quot;Enter your email address&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>那么在上面的代码中切换 <code>loginType</code> 将不会清除用户已经输入的内容。因为两个模板使用了相同的元素，<code>&lt;input&gt;</code> 不会被替换掉——仅仅是替换了它的 <code>placeholder</code>。 </p>
+<p>所以 Vue 为你提供了一种方式来表达“这两个元素是完全独立的，不要复用它们”。添加具有唯一值的 <code>key</code> 即可：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-if</span>=<span class="string">&quot;loginType === &#x27;username&#x27;&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span>Username<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">placeholder</span>=<span class="string">&quot;Enter your username&quot;</span> <span class="attr">key</span>=<span class="string">&quot;username-input&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-else</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span>&gt;</span>Email<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">placeholder</span>=<span class="string">&quot;Enter your email address&quot;</span> <span class="attr">key</span>=<span class="string">&quot;email-input&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a>v-show</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-show</span>=<span class="string">&quot;ok&quot;</span>&gt;</span>Hello!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>不同的是带有 <code>v-show</code> 的元素始终会被渲染并保留在 DOM 中。<code>v-show</code> 只是简单地切换元素的 CSS property <code>display</code>。<code>v-show</code> 不支持 <code>&lt;template&gt;</code> 元素，也不支持 <code>v-else</code>。</p>
+<h2 id="v-if-vs-v-show"><a href="#v-if-vs-v-show" class="headerlink" title="v-if  vs v-show"></a>v-if  vs v-show</h2><p><code>v-if</code> 是“真正”的条件渲染，因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建。</p>
+<p><code>v-if</code> 也是<strong>惰性的</strong>：如果在初始渲染时条件为假，则什么也不做，直到条件第一次变为真，才开始渲染条件块。</p>
+<p><code>v-show</code> 不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS 进行切换。</p>
+<p>一般来说，<code>v-if</code> 有更高的切换开销，而 <code>v-show</code> 有更高的初始渲染开销。若需要频繁切换，则使用 <code>v-show</code> ；如果在运行时条件很少改变，则使用 <code>v-if</code> 较好。</p>
+<h2 id="v-if-与-v-for-一起使用"><a href="#v-if-与-v-for-一起使用" class="headerlink" title="v-if 与 v-for 一起使用"></a>v-if 与 v-for 一起使用</h2><p><strong>不推荐</strong>同时使用 <code>v-if</code> 和 <code>v-for</code>。当 <code>v-if</code> 与 <code>v-for</code> 一起使用时，<code>v-for</code> 具有比 <code>v-if</code> 更高的优先级。</p>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue - Vue 实例</title>
+    <url>/2021/01/11/Vue%20-%20Vue%20%E5%AE%9E%E4%BE%8B/</url>
+    <content><![CDATA[<h1 id="Vue-Vue-实例"><a href="#Vue-Vue-实例" class="headerlink" title="Vue - Vue 实例"></a>Vue - Vue 实例</h1><p>Vue参考文档：<a href="https://cn.vuejs.org/v2/guide/">Vue参考文档</a></p>
+<h2 id="Vue实例"><a href="#Vue实例" class="headerlink" title="Vue实例"></a><a href="https://cn.vuejs.org/v2/guide/instance.html">Vue实例</a></h2><h3 id="创建一个-Vue-实例"><a href="#创建一个-Vue-实例" class="headerlink" title="创建一个 Vue 实例"></a>创建一个 Vue 实例</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="comment">// 选项</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p><strong>选项对象</strong>可以在 <a href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE">API 文档</a>中浏览完整的选项列表。</p>
+<h3 id="数据与方法"><a href="#数据与方法" class="headerlink" title="数据与方法"></a>数据与方法</h3><p>当一个 Vue 实例被创建时，它将 <code>data</code> 对象中的所有的 property 加入到 Vue 的<strong>响应式系统</strong>中。当这些 property 的值发生改变时，视图将会产生“响应”，即匹配更新为新的值。</p>
+<h3 id="实例生命周期钩子"><a href="#实例生命周期钩子" class="headerlink" title="实例生命周期钩子"></a>实例生命周期钩子</h3><p>在实例生命周期的不同阶段被调用，如 <a href="https://cn.vuejs.org/v2/api/#created"><code>created</code></a> 、 <a href="https://cn.vuejs.org/v2/api/#mounted"><code>mounted</code></a>、<a href="https://cn.vuejs.org/v2/api/#updated"><code>updated</code></a> 和 <a href="https://cn.vuejs.org/v2/api/#destroyed"><code>destroyed</code></a>。生命周期钩子的 <code>this</code> 上下文指向调用它的 Vue 实例。</p>
+<blockquote>
+<p>不要在选项 property 或回调上使用箭头函数，比如 <code>created: () =&gt; console.log(this.a)</code> 或 <code>vm.$watch(&#39;a&#39;, newValue =&gt; this.myMethod())</code>。因为箭头函数并没有 <code>this</code>，<code>this</code> 会作为变量一直向上级词法作用域查找，直至找到为止，经常导致错误。</p>
+</blockquote>
+<h3 id="生命周期图示"><a href="#生命周期图示" class="headerlink" title="生命周期图示"></a>生命周期图示</h3><p><img src="https://cn.vuejs.org/images/lifecycle.png" alt="生命周期"></p>
 ]]></content>
       <categories>
         <category>Vue</category>
