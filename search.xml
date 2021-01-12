@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo搭建博客</title>
-    <url>/2021/01/10/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="Hexo搭建博客"><a href="#Hexo搭建博客" class="headerlink" title="Hexo搭建博客"></a>Hexo搭建博客</h1><ol>
-<li>Hexo 的安装参考 <a href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a></li>
-<li>安装 Next 主题，参考<a href="http://theme-next.iissnan.com/getting-started.html">Next主题官方文档</a></li>
-</ol>
-<p>基本命令：</p>
-<ul>
-<li>新建一篇博客</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new post &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>生成</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<ul>
-<li>清除</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<ul>
-<li>部署</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<ul>
-<li>本地启动</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s -p &lt;port&gt;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ES6快速入门</title>
     <url>/2021/01/10/ES6%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[<h1 id="ES6快速入门"><a href="#ES6快速入门" class="headerlink" title="ES6快速入门"></a>ES6快速入门</h1><p>具体使用参考  <a href="https://es6.ruanyifeng.com/#docs/let">ES6参考文档</a></p>
@@ -133,6 +98,41 @@
       </categories>
       <tags>
         <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo搭建博客</title>
+    <url>/2021/01/10/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="Hexo搭建博客"><a href="#Hexo搭建博客" class="headerlink" title="Hexo搭建博客"></a>Hexo搭建博客</h1><ol>
+<li>Hexo 的安装参考 <a href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a></li>
+<li>安装 Next 主题，参考<a href="http://theme-next.iissnan.com/getting-started.html">Next主题官方文档</a></li>
+</ol>
+<p>基本命令：</p>
+<ul>
+<li>新建一篇博客</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new post &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>清除</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<ul>
+<li>部署</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<ul>
+<li>本地启动</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s -p &lt;port&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -483,47 +483,6 @@
       </tags>
   </entry>
   <entry>
-    <title>前端基础</title>
-    <url>/2021/01/10/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<h1 id="前端基础"><a href="#前端基础" class="headerlink" title="前端基础"></a>前端基础</h1><p><a href="https://www.w3school.com.cn/h.asp">HTML参考文档</a></p>
-<p><a href="https://www.w3school.com.cn/h.asp">CSS参考文档</a></p>
-<p><a href="https://www.w3school.com.cn/js/index.asp">JavaScript参考文档</a></p>
-<p><a href="https://jquery.cuishifeng.cn/index.html">jQuery参考文档</a></p>
-<p><strong>CSS选择器</strong></p>
-<ul>
-<li><p>标签选择器</p>
-</li>
-<li><p>id选择器</p>
-</li>
-<li><p>类选择器</p>
-</li>
-<li><p>后代选择器</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.d</span> <span class="selector-tag">p</span> &#123;&#125; &lt;!<span class="selector-tag">--</span> <span class="selector-tag">class</span> 为 <span class="selector-tag">d</span>，后代为 <span class="selector-tag">p</span> 标签 <span class="selector-tag">--</span>&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>交集选择器</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-class">.p2</span> &#123;&#125; &lt;!<span class="selector-tag">--</span> 中间没有空格(<span class="selector-tag">p</span><span class="selector-class">.p2</span> 又叫 <span class="selector-tag">p</span> 标签 又叫<span class="selector-tag">p2</span>) <span class="selector-tag">--</span>&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>并集选择器</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.d4</span> <span class="selector-tag">h1</span>,<span class="selector-tag">li</span> &#123;&#125; &lt;!<span class="selector-tag">--</span> 中间用逗号隔开 <span class="selector-tag">--</span>&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>通配符  (*)</p>
-</li>
-</ul>
-<p><strong>盒模型</strong></p>
-<p>基本属性</p>
-<ul>
-<li>width：指的是内容区域的宽度</li>
-<li>height：值得是内容区域的高度</li>
-<li>padding：内边距</li>
-<li>border：边框</li>
-<li>margin：外边距</li>
-</ul>
-]]></content>
-      <categories>
-        <category>前端基础</category>
-      </categories>
-      <tags>
-        <tag>前端基础</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue - 表单输入绑定</title>
     <url>/2021/01/11/Vue%20-%20%E8%A1%A8%E5%8D%95%E8%BE%93%E5%85%A5%E7%BB%91%E5%AE%9A/</url>
     <content><![CDATA[<h1 id="Vue-表单输入绑定"><a href="#Vue-表单输入绑定" class="headerlink" title="Vue - 表单输入绑定"></a>Vue - 表单输入绑定</h1><h2 id="表单输入绑定"><a href="#表单输入绑定" class="headerlink" title="表单输入绑定"></a><a href="https://cn.vuejs.org/v2/guide/forms.html">表单输入绑定</a></h2><h3 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h3><p>可以用 <code>v-model</code> 指令在表单 <code>&lt;input&gt;</code>、<code>&lt;textarea&gt;</code> 及 <code>&lt;select&gt;</code> 元素上创建双向数据绑定。</p>
@@ -583,6 +542,75 @@
 </ul>
 <p>如果要自动过滤用户输入的首尾空白字符，可以给 <code>v-model</code> 添加 <code>trim</code> 修饰符：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model.trim</span>=<span class="string">&quot;msg&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端基础</title>
+    <url>/2021/01/10/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1 id="前端基础"><a href="#前端基础" class="headerlink" title="前端基础"></a>前端基础</h1><p><a href="https://www.w3school.com.cn/h.asp">HTML参考文档</a></p>
+<p><a href="https://www.w3school.com.cn/h.asp">CSS参考文档</a></p>
+<p><a href="https://www.w3school.com.cn/js/index.asp">JavaScript参考文档</a></p>
+<p><a href="https://jquery.cuishifeng.cn/index.html">jQuery参考文档</a></p>
+<p><strong>CSS选择器</strong></p>
+<ul>
+<li><p>标签选择器</p>
+</li>
+<li><p>id选择器</p>
+</li>
+<li><p>类选择器</p>
+</li>
+<li><p>后代选择器</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.d</span> <span class="selector-tag">p</span> &#123;&#125; &lt;!<span class="selector-tag">--</span> <span class="selector-tag">class</span> 为 <span class="selector-tag">d</span>，后代为 <span class="selector-tag">p</span> 标签 <span class="selector-tag">--</span>&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>交集选择器</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-class">.p2</span> &#123;&#125; &lt;!<span class="selector-tag">--</span> 中间没有空格(<span class="selector-tag">p</span><span class="selector-class">.p2</span> 又叫 <span class="selector-tag">p</span> 标签 又叫<span class="selector-tag">p2</span>) <span class="selector-tag">--</span>&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>并集选择器</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.d4</span> <span class="selector-tag">h1</span>,<span class="selector-tag">li</span> &#123;&#125; &lt;!<span class="selector-tag">--</span> 中间用逗号隔开 <span class="selector-tag">--</span>&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>通配符  (*)</p>
+</li>
+</ul>
+<p><strong>盒模型</strong></p>
+<p>基本属性</p>
+<ul>
+<li>width：指的是内容区域的宽度</li>
+<li>height：值得是内容区域的高度</li>
+<li>padding：内边距</li>
+<li>border：边框</li>
+<li>margin：外边距</li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端基础</category>
+      </categories>
+      <tags>
+        <tag>前端基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue - 计算属性和侦听器</title>
+    <url>/2021/01/11/Vue%20-%20%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7%E5%92%8C%E4%BE%A6%E5%90%AC%E5%99%A8/</url>
+    <content><![CDATA[<h1 id="Vue-计算属性和侦听器"><a href="#Vue-计算属性和侦听器" class="headerlink" title="Vue - 计算属性和侦听器"></a>Vue - 计算属性和侦听器</h1><h2 id="计算属性和侦听器"><a href="#计算属性和侦听器" class="headerlink" title="计算属性和侦听器"></a><a href="https://cn.vuejs.org/v2/guide/computed.html">计算属性和侦听器</a></h2><h3 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h3><h4 id="基础例子"><a href="#基础例子" class="headerlink" title="基础例子"></a>基础例子</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;div id=<span class="string">&quot;example&quot;</span>&gt;</span><br><span class="line">  &lt;p&gt;Original message: <span class="string">&quot;&#123;&#123; message &#125;&#125;&quot;</span>&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;Computed reversed message: <span class="string">&quot;&#123;&#123; reversedMessage &#125;&#125;&quot;</span>&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">&#x27;#example&#x27;</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">        message: <span class="string">&#x27;Hello&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    computed: &#123;</span><br><span class="line">        <span class="function"><span class="title">reversedMessage</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">            <span class="comment">// this指向 vm 实例</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">this</span>.message.split(<span class="string">&#x27;&#x27;</span>).reverse().join(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="计算属性缓存-vs-方法"><a href="#计算属性缓存-vs-方法" class="headerlink" title="计算属性缓存 vs 方法"></a>计算属性缓存 vs 方法</h4><p><strong>计算属性是基于它们的响应式依赖进行缓存的</strong>。只在相关响应式依赖发生改变时它们才会重新求值。这就意味着只要 <code>message</code> 还没有发生改变，多次访问 <code>reversedMessage</code> 计算属性会立即返回之前的计算结果。相比之下，每当触发重新渲染时，调用方法将<strong>总会</strong>再次执行函数。</p>
+<h4 id="计算属性-vs-侦听属性"><a href="#计算属性-vs-侦听属性" class="headerlink" title="计算属性 vs 侦听属性"></a>计算属性 vs 侦听属性</h4><p>以下例子更好的做法是使用计算属性而不是命令式的 <code>watch</code> 回调。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;demo&quot;</span>&gt;</span>&#123;&#123; fullName &#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">&#x27;#demo&#x27;</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    firstName: <span class="string">&#x27;Foo&#x27;</span>,</span><br><span class="line">    lastName: <span class="string">&#x27;Bar&#x27;</span>,</span><br><span class="line">    fullName: <span class="string">&#x27;Foo Bar&#x27;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  watch: &#123;</span><br><span class="line">    firstName: <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">this</span>.fullName = val + <span class="string">&#x27; &#x27;</span> + <span class="built_in">this</span>.lastName</span><br><span class="line">    &#125;,</span><br><span class="line">    lastName: <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">this</span>.fullName = <span class="built_in">this</span>.firstName + <span class="string">&#x27; &#x27;</span> + val</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>上面代码是命令式且重复的。将它与计算属性的版本进行比较：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">&#x27;#demo&#x27;</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    firstName: <span class="string">&#x27;Foo&#x27;</span>,</span><br><span class="line">    lastName: <span class="string">&#x27;Bar&#x27;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  computed: &#123;</span><br><span class="line">    fullName: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">this</span>.firstName + <span class="string">&#x27; &#x27;</span> + <span class="built_in">this</span>.lastName</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="计算属性的-setter"><a href="#计算属性的-setter" class="headerlink" title="计算属性的 setter"></a>计算属性的 setter</h4><p>计算属性默认只有 getter，需要时可以提供一个 setter。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">get: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;,</span><br><span class="line">set: <span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="侦听器"><a href="#侦听器" class="headerlink" title="侦听器"></a>侦听器</h3><p> Vue 通过 <code>watch</code> 选项提供了一个更通用的方法，来响应数据的变化。当需要在数据变化时执行异步或开销较大的操作时，这个方式是最有用的。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">&#x27;#demo&#x27;</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    firstName: <span class="string">&#x27;Foo&#x27;</span>,</span><br><span class="line">    lastName: <span class="string">&#x27;Bar&#x27;</span>,</span><br><span class="line">    fullName: <span class="string">&#x27;Foo Bar&#x27;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  watch: &#123;</span><br><span class="line">    firstName: <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">this</span>.fullName = val + <span class="string">&#x27; &#x27;</span> + <span class="built_in">this</span>.lastName</span><br><span class="line">    &#125;,</span><br><span class="line">    lastName: <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">this</span>.fullName = <span class="built_in">this</span>.firstName + <span class="string">&#x27; &#x27;</span> + val</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Vue</category>
