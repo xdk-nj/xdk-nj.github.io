@@ -20,22 +20,20 @@
     var CONFIG = {"hostname":"xdk-nj.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Vue - Vue 实例">
+  <meta name="description" content="Vue - slot基本使用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue - Vue 实例">
-<meta property="og:url" content="https://xdk-nj.github.io/2021/01/11/Vue%20-%20Vue%20%E5%AE%9E%E4%BE%8B/index.html">
+<meta property="og:title" content="Vue - slot基本使用">
+<meta property="og:url" content="https://xdk-nj.github.io/2021/01/17/Vue%20-%20slot%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="打醒月亮">
-<meta property="og:description" content="Vue - Vue 实例">
+<meta property="og:description" content="Vue - slot基本使用">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cn.vuejs.org/images/lifecycle.png">
-<meta property="article:published_time" content="2021-01-11T07:16:04.000Z">
-<meta property="article:modified_time" content="2021-01-18T02:41:46.771Z">
+<meta property="article:published_time" content="2021-01-17T02:09:04.000Z">
+<meta property="article:modified_time" content="2021-01-18T04:16:27.295Z">
 <meta property="article:author" content="xudukang">
 <meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cn.vuejs.org/images/lifecycle.png">
 
-<link rel="canonical" href="https://xdk-nj.github.io/2021/01/11/Vue%20-%20Vue%20%E5%AE%9E%E4%BE%8B/">
+<link rel="canonical" href="https://xdk-nj.github.io/2021/01/17/Vue%20-%20slot%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
 
 
 <script id="page-configurations">
@@ -48,7 +46,7 @@
   };
 </script>
 
-  <title>Vue - Vue 实例 | 打醒月亮</title>
+  <title>Vue - slot基本使用 | 打醒月亮</title>
   
 
 
@@ -192,7 +190,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xdk-nj.github.io/2021/01/11/Vue%20-%20Vue%20%E5%AE%9E%E4%BE%8B/">
+    <link itemprop="mainEntityOfPage" href="https://xdk-nj.github.io/2021/01/17/Vue%20-%20slot%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -205,7 +203,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Vue - Vue 实例
+          Vue - slot基本使用
         </h1>
 
         <div class="post-meta">
@@ -215,14 +213,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-01-11 15:16:04" itemprop="dateCreated datePublished" datetime="2021-01-11T15:16:04+08:00">2021-01-11</time>
+              <time title="创建时间：2021-01-17 10:09:04" itemprop="dateCreated datePublished" datetime="2021-01-17T10:09:04+08:00">2021-01-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-18 10:41:46" itemprop="dateModified" datetime="2021-01-18T10:41:46+08:00">2021-01-18</time>
+                <time title="修改时间：2021-01-18 12:16:27" itemprop="dateModified" datetime="2021-01-18T12:16:27+08:00">2021-01-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -240,14 +238,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>436</span>
+              <span>1.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -259,16 +257,46 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="Vue-Vue-实例"><a href="#Vue-Vue-实例" class="headerlink" title="Vue - Vue 实例"></a>Vue - Vue 实例</h2><p>Vue参考文档：<a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/guide/">Vue参考文档</a></p>
-<h3 id="创建一个-Vue-实例"><a href="#创建一个-Vue-实例" class="headerlink" title="创建一个 Vue 实例"></a>创建一个 Vue 实例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="comment">// 选项</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p><strong>选项对象</strong>可以在 <a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE">API 文档</a>中浏览完整的选项列表。</p>
-<h3 id="数据与方法"><a href="#数据与方法" class="headerlink" title="数据与方法"></a>数据与方法</h3><p>当一个 Vue 实例被创建时，它将 <code>data</code> 对象中的所有的 property 加入到 Vue 的<strong>响应式系统</strong>中。当这些 property 的值发生改变时，视图将会产生“响应”，即匹配更新为新的值。</p>
-<h3 id="实例生命周期钩子"><a href="#实例生命周期钩子" class="headerlink" title="实例生命周期钩子"></a>实例生命周期钩子</h3><p>在实例生命周期的不同阶段被调用，如 <a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#created"><code>created</code></a> 、 <a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#mounted"><code>mounted</code></a>、<a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#updated"><code>updated</code></a> 和 <a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#destroyed"><code>destroyed</code></a>。生命周期钩子的 <code>this</code> 上下文指向调用它的 Vue 实例。</p>
-<blockquote>
-<p>不要在选项 property 或回调上使用箭头函数，比如 <code>created: () =&gt; console.log(this.a)</code> 或 <code>vm.$watch(&#39;a&#39;, newValue =&gt; this.myMethod())</code>。因为箭头函数并没有 <code>this</code>，<code>this</code> 会作为变量一直向上级词法作用域查找，直至找到为止，经常导致错误。</p>
-</blockquote>
-<h3 id="生命周期图示"><a href="#生命周期图示" class="headerlink" title="生命周期图示"></a>生命周期图示</h3><p><img src="https://cn.vuejs.org/images/lifecycle.png" alt="生命周期"></p>
+        <h2 id="Vue-slot基本使用"><a href="#Vue-slot基本使用" class="headerlink" title="Vue - slot基本使用"></a>Vue - slot基本使用</h2><h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><p><strong>方式1</strong> </p>
+<ul>
+<li>main.js 中添加</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">&#x27;cpn&#x27;</span>, &#123;</span><br><span class="line">  template: <span class="string">`</span></span><br><span class="line"><span class="string">      &lt;div&gt;</span></span><br><span class="line"><span class="string">        &lt;strong&gt;slot 插槽&lt;/strong&gt;</span></span><br><span class="line"><span class="string">        &lt;slot&gt;&lt;/slot&gt;</span></span><br><span class="line"><span class="string">      &lt;/div&gt;</span></span><br><span class="line"><span class="string">    `</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用组件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;cpn&gt;&lt;p&gt;slot内容1&lt;&#x2F;p&gt;&lt;&#x2F;cpn&gt;</span><br><span class="line">    &lt;cpn&gt;&lt;p&gt;slot内容2&lt;&#x2F;p&gt;&lt;&#x2F;cpn&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加vue.config.js</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    runtimeCompiler: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>方式2</strong></p>
+<ul>
+<li>创建组件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    Cpn2</span><br><span class="line">    &lt;slot&gt;&lt;&#x2F;slot&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    export default &#123;</span><br><span class="line">        name: &quot;Cpn2&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;style&gt;&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>注册组件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    import Cpn2 from &#39;@&#x2F;views&#x2F;Cpn2.vue&#39;  &#x2F;&#x2F; @ 等价于 &#x2F;src 这个目录</span><br><span class="line">    export default &#123;</span><br><span class="line">        name: &quot;MySlot&quot;,</span><br><span class="line">        components: &#123;</span><br><span class="line">            Cpn2</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用组件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Cpn2&gt;&lt;p&gt;cpn2 哈哈哈&lt;&#x2F;p&gt;&lt;&#x2F;Cpn2&gt;</span><br></pre></td></tr></table></figure>
 
+
+<h3 id="具名插槽的使用"><a href="#具名插槽的使用" class="headerlink" title="具名插槽的使用"></a>具名插槽的使用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 为插槽设置 name --&gt;</span><br><span class="line">&lt;slot name&#x3D;&quot;left&quot;&gt;&lt;&#x2F;slot&gt;  </span><br><span class="line">&lt;!-- 指定插槽 --&gt;</span><br><span class="line">&lt;Cpn2&gt;&lt;p slot&#x3D;&quot;left&quot;&gt;left 哈哈哈&lt;&#x2F;p&gt;&lt;&#x2F;Cpn2&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="编译作用域"><a href="#编译作用域" class="headerlink" title="编译作用域"></a>编译作用域</h3><p>父级模板里的所有内容都是在父级作用域中编译的；子模板里的所有内容都是在子作用域中编译的。</p>
+<h3 id="作用域插槽的使用"><a href="#作用域插槽的使用" class="headerlink" title="作用域插槽的使用"></a>作用域插槽的使用</h3><ul>
+<li>Cpn2.vue</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;slot :data&#x3D;&quot;pl&quot;&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &lt;li v-for&#x3D;&quot;item in pl&quot;&gt;&#123;&#123;item&#125;&#125;&lt;&#x2F;li&gt;</span><br><span class="line">      &lt;&#x2F;ul&gt;</span><br><span class="line">  	&lt;&#x2F;slot&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    export default &#123;</span><br><span class="line">        name: &quot;Cpn2&quot;,</span><br><span class="line">        data() &#123;</span><br><span class="line">            return &#123;</span><br><span class="line">                pl: [&#39;Java&#39;, &#39;C++&#39;, &#39;C#&#39;]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;style&gt;&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 父组件获取到子组件的数据，以另一种方式进行展示 --&gt;</span><br><span class="line">&lt;Cpn2&gt;</span><br><span class="line">  &lt;template slot-scope&#x3D;&quot;slot&quot;&gt;</span><br><span class="line">    &lt;span&gt;&#123;&#123;slot.data.join(&#39; - &#39;)&#125;&#125;&lt;&#x2F;span&gt;</span><br><span class="line">  &lt;&#x2F;template&gt;</span><br><span class="line">&lt;&#x2F;Cpn2&gt;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -286,12 +314,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/01/10/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="prev" title="前端基础">
-      <i class="fa fa-chevron-left"></i> 前端基础
+    <a href="/2021/01/12/Vue%20-%20vuex%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" rel="prev" title="Vue - vuex基本使用">
+      <i class="fa fa-chevron-left"></i> Vue - vuex基本使用
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/01/11/Vue%20-%20%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/" rel="next" title="Vue - 模板语法">
-      Vue - 模板语法 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/01/17/Vue%20-%20router%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" rel="next" title="Vue - router基本使用">
+      Vue - router基本使用 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -351,7 +379,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue-Vue-%E5%AE%9E%E4%BE%8B"><span class="nav-number">1.</span> <span class="nav-text">Vue - Vue 实例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA-Vue-%E5%AE%9E%E4%BE%8B"><span class="nav-number">1.1.</span> <span class="nav-text">创建一个 Vue 实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E4%B8%8E%E6%96%B9%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">数据与方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90"><span class="nav-number">1.3.</span> <span class="nav-text">实例生命周期钩子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA"><span class="nav-number">1.4.</span> <span class="nav-text">生命周期图示</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue-slot%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">Vue - slot基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-number">1.1.</span> <span class="nav-text">基本使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B7%E5%90%8D%E6%8F%92%E6%A7%BD%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.2.</span> <span class="nav-text">具名插槽的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-number">1.3.</span> <span class="nav-text">编译作用域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.4.</span> <span class="nav-text">作用域插槽的使用</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
